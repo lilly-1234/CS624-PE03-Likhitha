@@ -71,7 +71,7 @@ class App extends Component {
 
   render() {
     const { inputValue, todos, type } = this.state;
-    // Filter todos based on selected type
+    // Filter todos based on selection type
     let filteredTodos = todos;
     if (type === 'Active') {
       filteredTodos = todos.filter(todo => !todo.complete);
